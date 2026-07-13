@@ -40,7 +40,8 @@ def send_tg_message(status_icon, status_text, time_left=""):
         f"🇫🇷 katabump 续期通知\n\n"
         f"{status_icon} {status_text}\n"
         f"👤 续期账户: {masked_email}\n"
-        f"⏱️ 续期时间: {current_time_str}"
+        f"⏱️ 续期时间: {current_time_str}\n"
+        f"🌐 {BASE_URL}"
     )
 
     url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"

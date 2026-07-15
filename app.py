@@ -40,6 +40,7 @@ def send_tg_message(status_icon, status_text, time_left="", server_url=None):
         f"🎮Katabump 续期通知\n"
         f"⏰运行时间: {current_time_str}\n"
         f"🖥️账号: {masked_email}\n"
+        f"🔢剩余时间: {time_left or '未知'}\n"
         f"📊续期结果: {'✅' if '成功' in status_text or '✅' in status_icon else '❌'}{status_text}"
     )
 
